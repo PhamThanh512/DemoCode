@@ -35,10 +35,7 @@ p {
 }
 
 .col {
-    float: left;
-    padding-left: 8px;
-    padding-right: 8px;
-    
+    padding: 16px 20px;
 }
 
 nav {
@@ -151,7 +148,96 @@ input:focus {
  
 }
 
-.login button{
+button {
+    transition: all 0.3s ease-out;
+    cursor: pointer;
+    border: none;
+}
+  
+button:hover {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    overflow: hidden;
+}
+.col {
+    border: 1px solid #5c5b5b;
+    border-radius: 20px;
+    height: fit-content;
+}
+
+.col img {
+    width: 100%;
+    height: 100%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    object-fit: fill;
+}
+ 
+.place-img {
+    width: 100%;
+}
+
+.place-body {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+} 
+
+.place-body-outside {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 21px;
+  
+    color: #000000;
+  
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.place-heading {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 21px;
+    color: #000000; 
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.btnStep { display: block;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #ff6e30;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+#footer {
+    line-height: 11px;
+    color: #626060;
+}
+ 
+.icon_left {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.iconEnd {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+
+/* .login button{
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -165,16 +251,20 @@ input:focus {
     flex: none;
     order: 1;
     flex-grow: 0;
-}
+} */
   
-button:hover {
+/* button:hover {
     text-decoration: underline;
-} 
+}  */
 
 #content {
-    width: 100%;
-    height: 600px;
-    position: relative;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.06);
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 #content .picture {
@@ -187,7 +277,6 @@ button:hover {
 #content img {
     width: 100%;
     height: 100%;
-
     object-fit: cover;
 }
 
@@ -231,8 +320,7 @@ button:hover {
 .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    border-radius: 2px;
+    grid-gap: 20px;
 }
 
 
@@ -251,6 +339,13 @@ button:hover {
     font-size: 15px;
     background-color: #fff;
 } 
+
+.place_body_ouside {
+    display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+}
 
 .place-heading {
     font-size: 15px;
@@ -275,12 +370,13 @@ button:hover {
 }
 
 .btnStep {
-    width: 496px;
-    height: 42px;
-    border-radius: 12px;
-    background-color: #FF6E30;
-    color: #fff;
-    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px;  
+    background-color: #ff6e30;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
 }
 
 #footer {
@@ -304,10 +400,6 @@ button:hover {
     line-height: 39px;
 }
 
-/* .footer_opening_text {
-    position: relative;
-    top: -70px;
-} */
 
 .footer_menu {
     display: flex;
@@ -328,10 +420,9 @@ button:hover {
     font-size: 15px;
     font-weight: 400;
     line-height: 18px;
-    text-decoration: none;
-    
+    text-decoration: none;    
     color: #000;
-  }
+}
 
 
 .final {
